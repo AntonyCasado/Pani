@@ -261,6 +261,14 @@
 }
 
 
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 20px 0;
+    }
+
+}
+
+
 /* About section */
 
 .main {
@@ -433,6 +441,11 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .main {
+        padding: 6rem;
+    }
+
     .main__img--card {
         width: 250px;
         height: 250px;
