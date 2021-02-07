@@ -194,8 +194,7 @@
 
 /* Hero section */
 .hero {
-    background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
+    background-image: url("business-woman.jpg");
     padding: 200px 0;
 }
 
@@ -233,12 +232,9 @@
 
 .hero__description {
     font-size: 60px;
-    background: #FF0099;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #493240, #FF0099);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #493240, #FF0099);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #ff00cc);
 
 
     background-size: 100%;
@@ -307,11 +303,8 @@
 .main__content h2 {
     font-size: 4rem;
     background: #ff00cc;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #333399, #ff00cc);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
     background-size: 100%;
@@ -368,4 +361,73 @@
 
 .main__btn:hover::after {
     width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+.main__img--card {
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #12c2e9 0%, #f64f59 100%);
+}
+
+.fa-layer-group,
+.fa-lightbulb {
+    font-size: 14rem;
+}
+
+#card-2 {
+    background: #03001e;
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+    background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+}
+
+/*Mobile responsive*/
+@media screen and (max-width: 1100px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .main__img--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__img--card {
+        height: 425px;
+        width: 425px;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.rem;
+        margin-top: 2rem;
+    }
+
+    .main__content h2 {
+        font-size: 3rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
 }
