@@ -519,18 +519,22 @@
 
 .services__card:nth-child(1) {
     background-image: url(custom.jpg);
+    -webkit-filter: grayscale(100%);
 }
 
 .services__card:nth-child(2) {
     background-image: url(ready.jpg);
+    -webkit-filter: grayscale(100%);
 }
 
 .services__card:nth-child(3) {
     background-image: url(experts.jpg);
+    -webkit-filter: grayscale(100%);
 }
 
 .services__card:nth-child(4) {
     background-image: url(lead.jpg);
+    -webkit-filter: grayscale(100%);
 }
 
 .services__card h2 {
@@ -568,6 +572,7 @@
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
+    -webkit-filter: none;
 }
 
 @media screen and (max-width: 1300px) {
